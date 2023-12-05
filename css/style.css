@@ -1,0 +1,101 @@
+
+/* Styling for form */
+form {
+    display: inline-block;
+    padding: 2px;
+}
+input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.message {
+    font-weight: bold;
+    height: 2em;
+    display: block;
+    text-align: center;
+    padding: 4px;
+}
+
+/* General styling for bod and text */
+
+h1{
+    margin: 0 auto 0 auto;
+    padding-top: 40px;
+    width: 900px;
+}
+
+.content {
+    text-align: center;
+    padding: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: fit-content;
+}
+
+.title-box {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Organize boxes so thathe they are placed nicely across the screen */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid black;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
+/* Styling for table to place it in  scrollable conatiner*/
+#myTable{
+    display: grid;
+    overflow: auto;
+    width: 450px;
+    height: 400px;
+    border-collapse: collapse;
+    margin: 5px;
+}
+#myTable th { 
+    position: sticky; 
+    top: 0; 
+    z-index: 1; 
+}
+#myTable tbody th { 
+    position: sticky; 
+    left: 0; 
+}
+
+th, td{
+    text-align: center;
+    padding: 8px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    background-color: #0483aa;
+    color: white;
+}
+
+/*styling for jquery validation errors*/
+.error {
+    color: #F00;
+    background-color: #FFF;
+  }

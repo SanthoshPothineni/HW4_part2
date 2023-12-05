@@ -1,0 +1,66 @@
+<!--File: index.html
+    GUI Assignment: Creating Multiplaction Table
+    Santhosh Pothineni, UMass Lowell Computer Science, 
+    santhosh_pothineni@student.uml.edu
+    Copyright (c) 2021 by Santhosh. All rights reserved. 
+    May be freely copied or excerpted for 
+    educational purposes with credit to the author.
+    updated by SP on November 14, 2023-->
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Multiplication Table</title>
+      <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+      <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" /> 
+      <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+      <div class = "content"> 
+        <!-- Create Title Area -->
+        <div class="title-box">
+          <h1>Multiplication Table Creator</h1>
+        </div>
+        <!-- Container for flex boxes -->
+        <div class="flex-container">
+          <!-- Child for holding form -->
+          <div class="flex-child">
+            <div class="message">Enter Multiplication Values Below</div>
+            <form name="multForm" id="multForm" action="" method="GET">
+              <label for="Vstart">Min Column Value:</label><br>
+              <input type="number" id="Vstart" class="numbox" name="Vstart"><br>
+              <div id="slider_Vstart" class = "slider"></div>
+              <label for="Vend">Max Column Value:</label><br>
+              <input type="number" id="Vend" class="numbox" name="Vend"><br>
+              <div id="slider_Vend" class = "slider"></div>
+              <label for="Hstart">Min Row Value:</label><br>
+              <input type="number" id="Hstart" class="numbox" name="Hstart"><br>
+              <div id="slider_Hstart" class = "slider"></div>
+              <label for="Hend">Max Row Value:</label><br>
+              <input type="number" id="Hend" class="numbox" name="Hend"><br>
+              <div id="slider_Hend" class = "slider"></div>
+              <input type="button" id="add" value="Add a Tab" disabled ="true">
+              <input type="button" id="deleteTabs" value="Delete all Tabs">
+            </form>
+          </div>
+          <!-- Child for holding -->
+          <div class="flex-child">
+            <div class= "ui-tabs-nav" id="tabs">
+              <ul>
+                <li><a href="#tabs-1">Home</a></li>
+              </ul>
+              <div id= 'tabs-1'>
+                <table id="myTable">
+                </table>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/additional-methods.js"></script>
+    <script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="javascript/script.js"></script>
+    </body>
+    </html>
